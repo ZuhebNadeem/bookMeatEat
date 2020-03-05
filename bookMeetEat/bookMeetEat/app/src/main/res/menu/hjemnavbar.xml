@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Legg til"
+        android:id="@+id/hjemLeggTilBestillingNavBar"
+        android:icon="@drawable/ic_add_black_24dp"/>
+
+    <item
+        android:title="Resturant"
+        android:id="@+id/hjemResturantNavBar"
+        android:icon="@drawable/ic_restaurant_menu_black_24dp" />
+
+    <item android:title="Personer"
+        android:id="@+id/hjemPersonerNavBar"
+        android:icon="@drawable/ic_person_black_24dp" />
+
+    <item android:title="Instillinger"
+        android:id="@+id/hjemInstillingNavbar"
+        android:icon="@drawable/ic_settings_black_24dp"/>
+
+
+
+
+
+
+</menu>

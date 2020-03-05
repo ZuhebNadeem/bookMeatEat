@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false">
+
+
+    <Button
+        android:id="@+id/btnRegBestillingVelgTidspunkt"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="velgTidspunkt"
+        android:text="@string/velg_tidspunkt" />
+
+
+    <TextView
+        android:textStyle="bold|italic"
+        android:id="@+id/valgtTidspunkt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:background="@color/colorAccent"
+        android:id="@+id/btnRegBestillingVelgResturant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="velgResturant"
+        android:text="@string/velg_restaurant" />
+
+    <TextView
+        android:textStyle="bold|italic"
+        android:id="@+id/visValgtResturant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:background="@color/colorAccent"
+        android:id="@+id/btnRegBestillingVelgPersoner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/velg_personer"
+        android:onClick="velgPersoner"/>
+
+    <TextView
+        android:textStyle="bold|italic"
+        android:id="@+id/visAllePersonerBestilling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnRegBestilling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="DBBestilling"
+        android:text="@string/bestill" />
+
+
+</LinearLayout>

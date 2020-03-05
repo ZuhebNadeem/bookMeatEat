@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="notifikasjon"
+        android:title="Notifikasjon varsel" />
+
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="sms"
+        android:title="SMS varsel til venner" />
+
+
+    <ListPreference
+        android:key="valgtTid"
+        android:title="Velg tidspunkt"
+        android:summary="Velg tidspunkt for utsending av varsler"
+        android:entries="@array/klokkeslettTxt"
+        android:entryValues="@array/klokkeslett"
+        android:defaultValue="5">
+    </ListPreference>
+
+
+</PreferenceScreen>

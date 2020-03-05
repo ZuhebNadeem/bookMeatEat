@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false">
+
+
+    <TextView
+        android:textStyle="bold|italic"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/navn" />
+
+    <EditText
+        android:id="@+id/txtRegRestaurantNavn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:textStyle="bold|italic"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adresse" />
+
+    <EditText
+        android:id="@+id/txtRegRestaurantAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <TextView
+        android:textStyle="bold|italic"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/telefon" />
+
+    <EditText
+        android:id="@+id/txtRegRestaurantTelefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <TextView
+        android:textStyle="bold|italic"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/type" />
+
+    <EditText
+        android:id="@+id/txtRegRestaurantType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnRegRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registrer"
+        android:onClick="RegistrerRestaurant"/>
+
+
+</LinearLayout>

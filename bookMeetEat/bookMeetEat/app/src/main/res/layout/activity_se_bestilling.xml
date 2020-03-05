@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false">
+
+
+    <TextView
+        android:textStyle="bold|italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATO:" />
+
+    <TextView
+        android:id="@+id/txtBestillingDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:textStyle="bold|italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESTAURANT:" />
+
+    <TextView
+        android:id="@+id/txtBestillingRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:textStyle="bold|italic"
+        android:id="@+id/lblBestillingVenner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VENNER:"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtBestillingVenner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:visibility="invisible" />
+
+    <Button
+        android:background="@color/colorAccent"
+        android:id="@+id/btnSlettBestilling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/avbestill"
+        android:onClick="slettBestilling"/>
+</LinearLayout>

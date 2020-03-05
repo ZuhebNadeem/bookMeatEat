@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Legg til"
+        android:id="@+id/LeggTilPerson"
+        android:icon="@drawable/ic_add_black_24dp"/>
+
+    <item android:title="Hjem"
+        android:id="@+id/PhjemNavBar"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item android:title="Resturant"
+        android:id="@+id/PResturantNavBar"
+        android:icon="@drawable/ic_restaurant_menu_black_24dp"/>
+
+</menu>

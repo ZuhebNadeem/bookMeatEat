@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BookMeetEat</string>
+    <string name="velg_tidspunkt">Velg Tidspunkt</string>
+    <string name="endre_person">Endre Person</string>
+    <string name="slett_person">Slett Person</string>
+    <string name="endre_restaurant">Endre Restaurant</string>
+    <string name="slett_restaurant">Slett Restaurant</string>
+    <string name="test_service">Test service</string>
+    <string name="stop_service">Stop service</string>
+    <string name="velg_restaurant">Velg Restaurant</string>
+    <string name="velg_personer">Velg Personer</string>
+    <string name="bestill">BESTILL</string>
+    <string name="navn">Navn</string>
+    <string name="telefon">Telefon</string>
+    <string name="registrer">Registrer</string>
+    <string name="se_alt_i_databasen">Se alt i databasen</string>
+    <string name="alle_verdier">Alle verdier</string>
+    <string name="adresse">Adresse</string>
+    <string name="type">Type</string>
+    <string name="avbestill">Avbestill</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false">
+
+
+    <EditText
+        android:id="@+id/txtEndreRestaurantNavn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/navn"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/txtEndreRestaurantAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/adresse"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/txtEndreRestaurantTelefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/telefon"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtEndreRestaurantType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/type"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnEndreRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/endre_restaurant"
+        android:onClick="endreRestaurant"/>
+
+    <Button
+        android:background="@color/colorAccent"
+        android:id="@+id/btnSlettRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/slett_restaurant"
+        android:onClick="slettRestaurant"/>
+</LinearLayout>

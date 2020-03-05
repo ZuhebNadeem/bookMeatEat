@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mappe2">
+
+    <uses-permission android:name="com.example.mappe2.permission" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <permission android:name="com.example.mappe2.permission" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegBestilling"
+            android:label="Registrer bestilling"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:label="Bestilling oversikt"
+            android:name=".SeBestilling"
+            android:parentActivityName=".MainActivity"
+            />
+
+        <activity
+            android:name=".MainRestaurant"
+            android:label="Resturanter"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegRestaurant"
+            android:label="Registrer restaurant"
+            android:parentActivityName=".MainRestaurant" />
+        <activity
+            android:name=".EndreRestaurant"
+            android:label="Endre restaurant"
+            android:parentActivityName=".MainRestaurant" />
+        <activity
+            android:name=".MainPerson"
+            android:label="Venner"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EndrePerson"
+            android:label="Endre venn"
+            android:parentActivityName=".MainPerson" />
+        <activity
+            android:name=".RegPerson"
+            android:label="Registrer venn"
+            android:parentActivityName=".MainPerson" />
+        <activity
+            android:name=".Preferanser"
+            android:label="Innstillinger"
+            android:parentActivityName=".MainActivity" />
+
+        <service android:name=".Service.MinService" />
+        <service android:name=".Service.StartService" />
+
+        <receiver android:name=".Service.MinBroadCast">
+            <intent-filter>
+                <action android:name="com.example.mappe2.Service.MinBroadCast" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".DBHandler.ContentProvider"
+            android:authorities="com.example.mappe2"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.example.mappe2.permission"
+            android:writePermission="com.example.mappe2.permission"></provider>
+    </application>
+
+</manifest>
